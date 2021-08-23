@@ -1,5 +1,16 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
+﻿
+/* Person Local QuiSol */
+:root {
+    --dangerColor: #ff4545;
+    --whiteColor: #fff;
+    --white2Color: #f1f1f1;
+    --blackColor: #222;
+    --grey1Color: #3a3b3c;
+    --grey2Color: #828282;
+    --yellowColor: #e6af4b;
+    --blueColor: #e7f3dd;
+}
+
 
 a.navbar-brand {
   white-space: normal;
@@ -17,6 +28,26 @@ a {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
+
+/* Boton Quisol */
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+} 
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: #fff;
@@ -69,3 +100,4 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+

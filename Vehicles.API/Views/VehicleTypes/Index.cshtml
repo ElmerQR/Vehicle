@@ -8,7 +8,7 @@
 
 
 <p>
-    <a asp-action="Create" class="btn btn-primary">Nuevo</a>
+    <a asp-action="Create" class="btn btn-primary btn-lg" data-bs-toggle="tooltip" data-bs-placement="right" title="Nuevo tipo de Vehículo"><i class="fas fa-plus"></i>   Nuevo</a>
 </p>
 
 <div class="row">
@@ -35,8 +35,13 @@
                                     @Html.DisplayFor(modelItem => item.Description)
                                 </td>
                                 <td>
-                                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Editar</a>
-                                    <button data-id="@item.Id" class="btn btn-danger deleteItem" data-toggle="modal" data-target="#deleteDialog">Eliminar</button>
+                                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-warning btn-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="Editar Registro"><i class="fas fa-edit"></i></a>
+                                    <!-- <button data-id="@item.Id" class="btn btn-danger deleteItem" data-toggle="modal" data-target="#deleteDialog">Eliminar</button> -->
+                                    <button data-id="@item.Id" 
+                                            class="btn btn-outline-danger btn-circle deleteItem" 
+                                            title="Eliminar Registro"
+                                            data-toggle="modal" 
+                                            data-target="#deleteDialog"><i class="fas fa-trash"></i></button>
                                 </td>
                             </tr>
                         }
